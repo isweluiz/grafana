@@ -6,7 +6,7 @@ My dashboards to grafana
 * Some dashboards in the pictures down
 
 ![Conexões_Linux](/pictures_grafana/conexões_linux.png)
-''Picture 1 -'' Dashboards the instances linux. Connection counter
+<b>Picture 1 - <b> Dashboards the instances linux. Connection counter
 
 
 @Author: Luiz Eduardo 
