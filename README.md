@@ -2,6 +2,7 @@
 
 My dashboards to grafana
 -------
+### You can download this dashboards in this [link](https://github.com/isweluiz/grafana/tree/master/Dashboards)
 
 * Some dashboards in the pictures down
 
