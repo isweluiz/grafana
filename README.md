@@ -1,4 +1,4 @@
-# Welcome to my place!
+# Welcome to my place ! 
 
 My dashboards to grafana
 -------
@@ -7,6 +7,21 @@ My dashboards to grafana
 
 ![Conexões_Linux](/pictures_grafana/conexões_linux.png)
 <b>Picture 1 - </b> Dashboards the instances linux. Connection counter
+
+![Conexões_Linux](/pictures_grafana/Roteadores.png)
+<b>Picture 2 - </b> Dashboards the monitoring the routers
+
+![Conexões_Linux](/pictures_grafana/SalaCofre.png)
+<b>Picture 3 - </b> Dashboards the monitoring safe box room
+
+![Conexões_Linux](/pictures_grafana/Windows-servers.png)
+<b>Picture 4 - </b> Dashboards the instances windows servers
+
+![Conexões_Linux](/pictures_grafana/linux_mem-cpu-network.png)
+<b>Picture 5 - </b> Dashboards the instances linux.
+
+
+
 
 
 @Author: Luiz Eduardo 
