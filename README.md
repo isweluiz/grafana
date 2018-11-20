@@ -9,16 +9,16 @@ My dashboards to grafana
 ![Conexões_Linux](/pictures_grafana/conexões_linux.png)
 <b>Picture 1 - </b> Dashboards the instances linux. Connection counter
 
-![Conexões_Linux](/pictures_grafana/Roteadores.png)
+![Conexões_Linux](/pictures_grafana/Roteadores1.png)
 <b>Picture 2 - </b> Dashboards the monitoring the routers
 
-![Conexões_Linux](/pictures_grafana/SalaCofre.png)
+![Conexões_Linux](/pictures_grafana/SalaCofre1.png)
 <b>Picture 3 - </b> Dashboards the monitoring safe box room
 
-![Conexões_Linux](/pictures_grafana/Windows-servers.png)
-<b>Picture 4 - </b> Dashboards the instances windows servers
+![Conexões_Linux](/pictures_grafana/BancoDeDados.png)
+<b>Picture 4 - </b>  Banco de dados
 
-![Conexões_Linux](/pictures_grafana/linux_mem-cpu-network.png)
+![Conexões_Linux](/pictures_grafana/IT-services.png)
 <b>Picture 5 - </b> Dashboards the instances linux.
 
 
