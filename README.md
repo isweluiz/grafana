@@ -18,7 +18,7 @@ My dashboards to grafana
 ![Conexões_Linux](/pictures_grafana/BancoDeDados.png)
 <b>Picture 4 - </b>  Banco de dados
 
-![Conexões_Linux](/pictures_grafana/IT-services.png)
+![Conexões_Linux](/pictures_grafana/IT-services.PNG)
 <b>Picture 5 - </b> Dashboards the instances linux.
 
 
