@@ -7,6 +7,7 @@ My dashboards to grafana
 * Some dashboards in the pictures down
 
 
+GLPI DASHBOARD
 ![Dashboard GLPI](/pictures_grafana/dashboard-glpi2.PNG)
 
 ![Conexões_Linux](/pictures_grafana/conexões_linux.png)
