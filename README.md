@@ -6,6 +6,9 @@ My dashboards to grafana
 
 * Some dashboards in the pictures down
 
+
+![Dashboard GLPI](/pictures_grafana/dashboard-glpi2.PNG)
+
 ![Conexões_Linux](/pictures_grafana/conexões_linux.png)
 <b>Picture 1 - </b> Dashboards the instances linux. Connection counter
 
