@@ -1,0 +1,1618 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "GLPI Dashboard\r\nShow somes informations on tickets",
+  "editable": true,
+  "gnetId": 7568,
+  "graphTooltip": 0,
+  "id": 3,
+  "iteration": 1560364910709,
+  "links": [],
+  "panels": [
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "#3f6833",
+        "#C4162A",
+        "rgba(245, 54, 54, 0.9)"
+      ],
+      "datasource": "GLPI API",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 0,
+        "y": 0
+      },
+      "id": 18,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "col_0": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_1": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_10": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_11": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_2": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_3": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_4": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_5": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_6": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_7": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_8": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_9": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "cols": {},
+          "console": false,
+          "counter": true,
+          "datefield": {
+            "group": "Special / be careful",
+            "label": "Do not use date search (get all data)",
+            "number": "-1"
+          },
+          "dayhours": false,
+          "dynamicsplit": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "histogram": false,
+          "query": "http://localhost/glpi/apirest.phpfront/ticket.php?is_deleted=0&criteria[0][field]=82&criteria[0][searchtype]=equals&criteria[0][value]=1&criteria[1][link]=AND&criteria[1][field]=12&criteria[1][searchtype]=equals&criteria[1][value]=notold&itemtype=Ticket&start=0",
+          "refId": "A",
+          "table": false
+        }
+      ],
+      "thresholds": "0,30",
+      "timerangefield": "date_creation",
+      "title": "Chamados atrasados",
+      "type": "singlestat",
+      "valueFontSize": "200%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "total"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "#3f6833",
+        "#FA6400",
+        "rgba(245, 54, 54, 0.9)"
+      ],
+      "datasource": "GLPI API",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 3,
+        "y": 0
+      },
+      "id": 12,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "col_0": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_1": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_10": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_11": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_2": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_3": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_4": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_5": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_6": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_7": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_8": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_9": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "cols": {},
+          "console": false,
+          "counter": true,
+          "datefield": {
+            "group": "Special / be careful",
+            "label": "Do not use date search (get all data)",
+            "number": "-1"
+          },
+          "dayhours": false,
+          "dynamicsplit": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "histogram": false,
+          "query": "http://localhost/glpi/apirest.phpfront/ticket.php?is_deleted=0&as_map=0&criteria[0][field]=52&criteria[0][searchtype]=equals&criteria[0][value]=2&criteria[1][link]=AND+NOT&criteria[1][field]=12&criteria[1][searchtype]=equals&criteria[1][value]=6&search=Search&itemtype=Ticket&start=0",
+          "refId": "A",
+          "table": false
+        }
+      ],
+      "thresholds": "0,30",
+      "timerangefield": "date_creation",
+      "title": "Pendentes",
+      "type": "singlestat",
+      "valueFontSize": "200%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "total"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "#3f6833",
+        "rgb(53, 145, 9)",
+        "rgba(245, 54, 54, 0.9)"
+      ],
+      "datasource": "GLPI API",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 7,
+        "y": 0
+      },
+      "id": 5,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "col_0": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_1": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_10": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_11": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_2": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_3": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_4": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_5": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_6": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_7": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_8": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_9": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "cols": {},
+          "console": false,
+          "counter": true,
+          "datefield": {
+            "group": "Special / be careful",
+            "label": "Do not use date search (get all data)",
+            "number": "-1"
+          },
+          "dayhours": false,
+          "dynamicsplit": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "histogram": false,
+          "query": "http://localhost/glpi/apirest.phpfront/ticket.php?is_deleted=0&as_map=0&criteria[0][field]=12&criteria[0][searchtype]=equals&criteria[0][value]=notold&search=Search&itemtype=Ticket&start=0",
+          "refId": "A",
+          "table": false
+        }
+      ],
+      "thresholds": "0,30",
+      "timerangefield": "date_creation",
+      "title": "Tickets abertos",
+      "type": "singlestat",
+      "valueFontSize": "200%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "total"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "#3f6833",
+        "rgb(53, 145, 9)",
+        "rgba(245, 54, 54, 0.9)"
+      ],
+      "datasource": "GLPI API",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 11,
+        "y": 0
+      },
+      "id": 19,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "col_0": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_1": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_10": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_11": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_2": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_3": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_4": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_5": {
+            "group": "",
+            "label": "------",
+            "number": "0"
+          },
+          "col_6": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_7": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_8": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_9": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "cols": {},
+          "console": false,
+          "counter": true,
+          "datefield": {
+            "group": "Special / be careful",
+            "label": "Do not use date search (get all data)",
+            "number": "-1"
+          },
+          "dayhours": false,
+          "dynamicsplit": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "histogram": false,
+          "query": "http://localhost/glpi/apirest.phpfront/ticket.php?is_deleted=0&criteria[0][field]=12&criteria[0][searchtype]=equals&criteria[0][value]=process&itemtype=Ticket&start=0",
+          "refId": "A",
+          "table": false
+        }
+      ],
+      "thresholds": "0,30",
+      "timerangefield": "date_creation",
+      "title": "Processando",
+      "type": "singlestat",
+      "valueFontSize": "200%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "total"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "rgba(50, 172, 45, 0.97)",
+        "rgb(53, 145, 9)",
+        "rgba(50, 172, 45, 0.97)"
+      ],
+      "datasource": "GLPI API",
+      "decimals": 0,
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 15,
+        "y": 0
+      },
+      "id": 11,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 4,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "100%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "col_0": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_1": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_10": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_11": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_2": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_3": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_4": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_5": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_6": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_7": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_8": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_9": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "console": false,
+          "counter": true,
+          "datefield": {
+            "group": "Special / be careful",
+            "label": "Do not use date search (get all data)",
+            "number": "-1"
+          },
+          "dayhours": false,
+          "dynamicsplit": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "histogram": false,
+          "query": "http://localhost/glpi/apirest.phpfront/ticket.php?is_deleted=0&as_map=0&criteria[0][field]=12&criteria[0][searchtype]=equals&criteria[0][value]=1&search=Search&itemtype=Ticket&start=0",
+          "refId": "A",
+          "table": false
+        }
+      ],
+      "thresholds": "",
+      "title": "Tickets novos",
+      "type": "singlestat",
+      "valueFontSize": "200%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "total"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "#1F60C4",
+        "rgb(53, 145, 9)",
+        "#d44a3a"
+      ],
+      "datasource": "GLPI API",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 5,
+        "x": 19,
+        "y": 0
+      },
+      "hideTimeOverride": true,
+      "id": 22,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "pluginVersion": "6.2.2",
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "col_0": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_1": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_10": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_11": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_2": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_3": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_4": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_5": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_6": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_7": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_8": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_9": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "console": false,
+          "counter": true,
+          "datefield": {
+            "group": "Caractéristiques",
+            "label": "Date d'ouverture",
+            "number": "15"
+          },
+          "dayhours": false,
+          "dynamicsplit": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "histogram": false,
+          "query": "http://localhost/glpi/apirest.phpfront/ticket.php?is_deleted=0&as_map=0&criteria[0][link]=AND&criteria[0][field]=12&criteria[0][searchtype]=equals&criteria[0][value]=all&search=Pesquisar&itemtype=Ticket&start=0",
+          "refId": "A",
+          "table": false
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": "15d",
+      "timeShift": null,
+      "title": "   Total de Chamados (últimos 15 dias)",
+      "type": "singlestat",
+      "valueFontSize": "200%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "total"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "cacheTimeout": null,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "GLPI API",
+      "decimals": 1,
+      "fill": 4,
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 3
+      },
+      "id": 1,
+      "legend": {
+        "alignAsTable": true,
+        "avg": true,
+        "current": false,
+        "hideEmpty": false,
+        "hideZero": false,
+        "max": true,
+        "min": true,
+        "rightSide": true,
+        "show": true,
+        "total": true,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "connected",
+      "options": {},
+      "percentage": false,
+      "pluginVersion": "6.2.2",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "media",
+          "lines": false,
+          "points": true
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "Chamdos",
+          "col_0": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_1": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_10": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_11": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_2": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_3": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_4": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_5": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_6": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_7": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_8": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_9": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "console": false,
+          "counter": true,
+          "datefield": {
+            "group": "Caractéristiques",
+            "label": "Date d'ouverture",
+            "number": "15"
+          },
+          "dayhours": false,
+          "dynamicsplit": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "histogram": false,
+          "query": "http://localhost/glpi/apirest.phpfront/ticket.php?is_deleted=0&as_map=0&criteria[0][link]=AND&criteria[0][field]=12&criteria[0][searchtype]=equals&criteria[0][value]=all&search=Pesquisar&itemtype=Ticket&start=0",
+          "refId": "A",
+          "table": false
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": "15d",
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "   Número de Chamados (últimos 15 dias)",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "transparent": true,
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "none",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": false
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "Aggregate": "all",
+      "BarPadding": 70,
+      "BaseLineColor": "#C0D8FF",
+      "BaseLineValue": 0,
+      "DateFormat": "YYYY-MM-DD HH:mm:ss",
+      "DateTimeColName": "",
+      "EvenRowColor": "rgba(0, 0, 0, 0)",
+      "FlashHighLimitBar": false,
+      "FlashLowLimitBar": false,
+      "GroupColName": "percentual",
+      "GroupCols": 0,
+      "GroupGap": 0,
+      "GroupLabelColor": "#ffffff",
+      "GroupLabelFontSize": "200%",
+      "GroupNameFilter": "",
+      "GroupSortString": "",
+      "HighAxisColor": "#ffffff",
+      "HighBarColor": "rgb(120, 128, 0)",
+      "HighLimitBarColor": "#ff0000",
+      "HighLimitBarFlashColor": "#ffa500",
+      "HighLimitBarFlashTimeout": 1000,
+      "HighLimitLineColor": "#ff0000",
+      "HighLimitValue": 0.33,
+      "HighSideMargin": null,
+      "Horizontal": false,
+      "LabelColName": "faixa",
+      "LabelColor": "#ffffff",
+      "LabelFontSize": "150%",
+      "LabelMargin": null,
+      "LabelNameFilter": "",
+      "LableAngle": 0,
+      "LowAxisColor": "#ffffff",
+      "LowBarColor": "teal",
+      "LowLimitBarColor": "#ff0000",
+      "LowLimitBarFlashColor": "#ffa500",
+      "LowLimitBarFlashTimeout": 200,
+      "LowLimitLineColor": "#ff0000",
+      "LowLimitValue": null,
+      "LowSideMargin": null,
+      "MaxLineColor": "rgb(74, 232, 12)",
+      "MaxLineValue": null,
+      "MinLineValue": 0,
+      "OddRowColor": "rgba(255, 255, 255, 0)",
+      "OutOfRangeLabelColor": "#ffffff",
+      "RecolorHighLimitBar": true,
+      "RecolorLowLimitBar": false,
+      "ScaleFactor": 1,
+      "ShowBaseLine": false,
+      "ShowDate": false,
+      "ShowGroupLabels": true,
+      "ShowHighLimitLine": false,
+      "ShowLabels": true,
+      "ShowLeftAxis": true,
+      "ShowLowLimitLine": false,
+      "ShowMaxLine": false,
+      "ShowMinLine": false,
+      "ShowRightAxis": true,
+      "ShowTooltips": true,
+      "ShowValues": true,
+      "SortColName": "value",
+      "SortDirection": "none",
+      "TZOffsetHours": 0,
+      "TooltipDateFormat": "YYYY-MM-DD HH:mm:ss",
+      "ValueColName": "quantidade",
+      "ValueColor": "#ffffff",
+      "ValueDecimals": 0,
+      "ValueFontSize": "100%",
+      "ValuePosition": "top",
+      "datasource": "MySQL",
+      "description": "",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 10
+      },
+      "id": 29,
+      "links": [],
+      "options": {},
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  faixa_valores.faixa,\n  CONCAT(IFNULL(ROUND((COUNT(chamados.id) / total) * 100), 0),\"%\") AS percentual,\n  COUNT(chamados.id) quantidade,\n  IFNULL(chamados.total, 0) Total\nFROM (SELECT DISTINCT\n    (SELECT\n        COUNT(*)\n      FROM glpi_tickets t\n      WHERE t.type = 1\n      AND t.is_deleted = 0\n  AND (IF(glpi_tickets.time_to_resolve IS NOT NULL\n  AND glpi_tickets.status <> 4\n  AND (glpi_tickets.solvedate > glpi_tickets.time_to_resolve\n  OR (glpi_tickets.solvedate IS NULL\n  AND glpi_tickets.time_to_resolve < NOW())), 1, 0) = 1)\n  ) AS total,\n    DATE_FORMAT(glpi_tickets.date_creation, '%Y%m%d') AS ano_mes,\n    glpi_tickets.id AS id,\n    glpi_tickets.name,\n    glpi_tickets.content AS descricao,\n    glpi_tickets.status AS cod_status,\n    glpi_entities.completename,\n    glpi_tickets.date_mod,\n    glpi_tickets.date,\n    glpi_tickets.type,\n    REPLACE(REPLACE(glpi_tickets.type, 1, 'Incidente'), 2, 'Requisição') AS ds_tipo,\n    glpi_tickets.priority,\n    GROUP_CONCAT(DISTINCT glpi_users_a5e2026cbcb683e774f93a59e24a62a4.id SEPARATOR '-') glpi_users_id,\n    GROUP_CONCAT(DISTINCT CONCAT(glpi_tickets_users_d1524bb2ea1d461ab90aed3b5f0e7e60.users_id, ' ', glpi_tickets_users_d1524bb2ea1d461ab90aed3b5f0e7e60.alternative_email) SEPARATOR '-') AS users_id_alternative_email,\n    GROUP_CONCAT(DISTINCT glpi_users_f201be21cd638ee780d08cba4ceff0d4.id SEPARATOR '-') AS glpi_users_id2,\n    GROUP_CONCAT(DISTINCT CONCAT(glpi_tickets_users_819efb92c8b927b345e489211ec8e43b.users_id, ' ', glpi_tickets_users_819efb92c8b927b345e489211ec8e43b.alternative_email) SEPARATOR '-') AS users_id_alternative_email2,\n    GROUP_CONCAT(DISTINCT CONCAT(IFNULL(glpi_groups_1358be41ea7158319a888236ffba5355.completename, '__NULL__'), '-', glpi_groups_1358be41ea7158319a888236ffba5355.id)\n    ORDER BY glpi_groups_1358be41ea7158319a888236ffba5355.id SEPARATOR '-') AS glpi_groups_id,\n    glpi_itilcategories.completename AS itilcategories_name,\n    glpi_tickets.time_to_resolve AS time_to_resolve2,\n    SEC_TO_TIME(takeintoaccount_delay_stat) sec_takeintoaccount_delay_stat,\n    GROUP_CONCAT(DISTINCT CONCAT(IFNULL(glpi_tickets.takeintoaccount_delay_stat, '__NULL__'), '-', glpi_tickets.id) ORDER BY glpi_tickets.id SEPARATOR '$$##$$') AS takeintoaccount_delay_stat,\n    GROUP_CONCAT(DISTINCT CONCAT(IFNULL(glpi_taskcategories_e5ca2f53018fdc28a31faf534186b3a2.name, '__NULL__'), '$#$', glpi_taskcategories_e5ca2f53018fdc28a31faf534186b3a2.id)\n    ORDER BY glpi_taskcategories_e5ca2f53018fdc28a31faf534186b3a2.id SEPARATOR '$$##$$') AS categoria,\n    glpi_slas_slas_id_ttr_f3aab278f60e510b77ec99388d401d84.name AS SLA,\n    GROUP_CONCAT(DISTINCT CONCAT(IFNULL(glpi_slalevels_b3496fc202f417bdbcf7196c9852bb44.name, '__NULL__'), '$#$', glpi_slalevels_b3496fc202f417bdbcf7196c9852bb44.id)\n    ORDER BY glpi_slalevels_b3496fc202f417bdbcf7196c9852bb44.id SEPARATOR '-') AS nivel_sla,\n    glpi_slas_slas_id_tto_bb5aab1a526f6069c73375c529fafec7.name AS slas_id_tto_name,\n    glpi_tickets.closedate,\n    glpi_tickets.solvedate,\n    glpi_tickets.time_to_own,\n    glpi_tickets.time_to_resolve,\n    NOW() data_atual,\n    SEC_TO_TIME(TIMESTAMPDIFF(SECOND, NOW(), time_to_resolve)) differenca,\n    glpi_tickets.status AS status3,\n    (SELECT\n        REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n      FROM glpi_slas sla\n      WHERE sla.id = glpi_tickets.slas_id_ttr) sla_em_segundos,\n    SEC_TO_TIME((SELECT\n        REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n      FROM glpi_slas sla\n      WHERE sla.id = glpi_tickets.slas_id_ttr)) AS tempo_sla_chamado,\n    SEC_TO_TIME((SELECT\n        REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n      FROM glpi_slas sla\n      WHERE sla.id = glpi_tickets.slas_id_ttr) - (TIMESTAMPDIFF(SECOND, NOW(), time_to_resolve))) tempo_consumido,\n    ((((SELECT\n        REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n      FROM glpi_slas sla\n      WHERE sla.id = glpi_tickets.slas_id_ttr) - (TIMESTAMPDIFF(SECOND, NOW(), time_to_resolve))) / (SELECT\n        REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n      FROM glpi_slas sla\n      WHERE sla.id = glpi_tickets.slas_id_ttr)) * 100) AS percSLAConsumido,\n    IFNULL((CASE WHEN ((((SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr) - (TIMESTAMPDIFF(SECOND, NOW(), time_to_resolve))) / (SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr)) * 100) < 70 THEN 69 WHEN ((((SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr) - (TIMESTAMPDIFF(SECOND, NOW(), time_to_resolve))) / (SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr)) * 100) >= 70 AND\n        ((((SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr) - (TIMESTAMPDIFF(SECOND, NOW(), time_to_resolve))) / (SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr)) * 100) < 90 THEN 70 WHEN ((((SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr) - (TIMESTAMPDIFF(SECOND, NOW(), time_to_resolve))) / (SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr)) * 100) >= 90 AND\n        ((((SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr) - (TIMESTAMPDIFF(SECOND, NOW(), time_to_resolve))) / (SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr)) * 100) <= 100 THEN 90 WHEN ((((SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr) - (TIMESTAMPDIFF(SECOND, NOW(), time_to_resolve))) / (SELECT\n            REPLACE(REPLACE(REPLACE(sla.definition_time, 'hour', 60), 'minute', 1), 'day', 1440) * sla.number_time * 60\n          FROM glpi_slas sla\n          WHERE sla.id = glpi_tickets.slas_id_ttr)) * 100) > 100 THEN 101 END), 69) AS perc_calc_sla,\n    IF(glpi_tickets.time_to_resolve IS NOT NULL AND glpi_tickets.status <> 4 AND (glpi_tickets.solvedate > glpi_tickets.time_to_resolve OR (glpi_tickets.solvedate IS NULL AND glpi_tickets.time_to_resolve < NOW())), 'execido termpo atend', 'dentro do tempo') AS time_exceded_solution,\n    GROUP_CONCAT(DISTINCT CONCAT(IFNULL(glpi_tickets.solve_delay_stat, '__NULL__'), '->', glpi_tickets.id)\n    ORDER BY glpi_tickets.id SEPARATOR '$$##$$') AS solve_delay_stat_and_id,\n    GROUP_CONCAT(DISTINCT CONCAT(IFNULL(glpi_tickets.waiting_duration, '__NULL__'), '->', glpi_tickets.id)\n    ORDER BY glpi_tickets.id SEPARATOR '$$##$$') AS waiting_duration_and_id\n  FROM glpi_tickets\n    LEFT JOIN glpi_entities\n      ON (glpi_tickets.entities_id = glpi_entities.id)\n    LEFT JOIN glpi_tickets_users AS glpi_tickets_users_d1524bb2ea1d461ab90aed3b5f0e7e60\n      ON (glpi_tickets.id = glpi_tickets_users_d1524bb2ea1d461ab90aed3b5f0e7e60.tickets_id\n      AND glpi_tickets_users_d1524bb2ea1d461ab90aed3b5f0e7e60.type = 1)\n    LEFT JOIN glpi_users AS glpi_users_a5e2026cbcb683e774f93a59e24a62a4\n      ON (glpi_tickets_users_d1524bb2ea1d461ab90aed3b5f0e7e60.users_id = glpi_users_a5e2026cbcb683e774f93a59e24a62a4.id)\n    LEFT JOIN glpi_tickets_users AS glpi_tickets_users_819efb92c8b927b345e489211ec8e43b\n      ON (glpi_tickets.id = glpi_tickets_users_819efb92c8b927b345e489211ec8e43b.tickets_id\n      AND glpi_tickets_users_819efb92c8b927b345e489211ec8e43b.type = 2)\n    LEFT JOIN glpi_users AS glpi_users_f201be21cd638ee780d08cba4ceff0d4\n      ON (glpi_tickets_users_819efb92c8b927b345e489211ec8e43b.users_id = glpi_users_f201be21cd638ee780d08cba4ceff0d4.id)\n    LEFT JOIN glpi_groups_tickets AS glpi_groups_tickets_819efb92c8b927b345e489211ec8e43b\n      ON (glpi_tickets.id = glpi_groups_tickets_819efb92c8b927b345e489211ec8e43b.tickets_id\n      AND glpi_groups_tickets_819efb92c8b927b345e489211ec8e43b.type = 2)\n    LEFT JOIN glpi_groups AS glpi_groups_1358be41ea7158319a888236ffba5355\n      ON (glpi_groups_tickets_819efb92c8b927b345e489211ec8e43b.groups_id = glpi_groups_1358be41ea7158319a888236ffba5355.id)\n    LEFT JOIN glpi_itilcategories\n      ON (glpi_tickets.itilcategories_id = glpi_itilcategories.id)\n    LEFT JOIN glpi_tickettasks\n      ON (glpi_tickets.id = glpi_tickettasks.tickets_id)\n    LEFT JOIN glpi_taskcategories AS glpi_taskcategories_e5ca2f53018fdc28a31faf534186b3a2\n      ON (glpi_tickettasks.taskcategories_id = glpi_taskcategories_e5ca2f53018fdc28a31faf534186b3a2.id)\n    LEFT JOIN glpi_slas AS glpi_slas_slas_id_ttr_f3aab278f60e510b77ec99388d401d84\n      ON (glpi_tickets.slas_id_ttr = glpi_slas_slas_id_ttr_f3aab278f60e510b77ec99388d401d84.id\n      AND glpi_slas_slas_id_ttr_f3aab278f60e510b77ec99388d401d84.type = '0')\n    LEFT JOIN glpi_slalevels_tickets\n      ON (glpi_tickets.id = glpi_slalevels_tickets.tickets_id)\n    LEFT JOIN glpi_slalevels AS glpi_slalevels_b3496fc202f417bdbcf7196c9852bb44\n      ON (glpi_slalevels_tickets.slalevels_id = glpi_slalevels_b3496fc202f417bdbcf7196c9852bb44.id)\n    LEFT JOIN glpi_slas AS glpi_slas_slas_id_tto_bb5aab1a526f6069c73375c529fafec7\n      ON (glpi_tickets.slas_id_tto = glpi_slas_slas_id_tto_bb5aab1a526f6069c73375c529fafec7.id\n      AND glpi_slas_slas_id_tto_bb5aab1a526f6069c73375c529fafec7.type = '1')\n  WHERE glpi_tickets.is_deleted = 0\n  AND (IF(glpi_tickets.time_to_resolve IS NOT NULL\n  AND glpi_tickets.status <> 4\n  AND (glpi_tickets.solvedate > glpi_tickets.time_to_resolve\n  OR (glpi_tickets.solvedate IS NULL\n  AND glpi_tickets.time_to_resolve < NOW())), 1, 0) = 1)\n  AND glpi_tickets.type = 1\n  GROUP BY glpi_tickets.id) chamados\n  RIGHT JOIN (SELECT      69 AS chave,      '0-69' AS faixa UNION\n    SELECT      70,      '70-89' UNION\n    SELECT      90,      '90-100' UNION\n    SELECT      101,      'mais de 100') AS faixa_valores\n    ON (faixa_valores.chave = chamados.perc_calc_sla)\nGROUP BY faixa_valores.faixa,\n         chamados.total   ",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "id"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "glpi_alerts",
+          "timeColumn": "date",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Evolução do percentual  de SLA dos incidentes",
+      "transparent": true,
+      "type": "michaeldmoore-multistat-panel"
+    },
+    {
+      "aliasColors": {},
+      "bars": true,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "GLPI API",
+      "decimals": null,
+      "fill": 1,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 10
+      },
+      "id": 15,
+      "legend": {
+        "alignAsTable": false,
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "rightSide": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": false,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "null",
+      "options": {},
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "Incidente",
+          "color": "#37872D"
+        },
+        {
+          "alias": "Requisição",
+          "color": "#C4162A"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "Incidente",
+          "channel": {
+            "name": ""
+          },
+          "col_0": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_1": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_10": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_11": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_2": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_3": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_4": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_5": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_6": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_7": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_8": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_9": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "console": false,
+          "counter": true,
+          "datefield": {
+            "group": "Special / be careful",
+            "label": "Do not use date search (get all data)",
+            "number": "-1"
+          },
+          "dayhours": false,
+          "device": {
+            "name": ""
+          },
+          "dynamicsplit": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "errors": {},
+          "functions": [],
+          "group": {
+            "name": ""
+          },
+          "histogram": false,
+          "options": {
+            "includeDeviceName": false,
+            "includeSensorName": false,
+            "mode": {
+              "filterProperty": {},
+              "name": "Metrics",
+              "textProperty": {},
+              "textValueFrom": {},
+              "value": 1
+            }
+          },
+          "query": "http://localhost/glpi/apirest.phpfront/ticket.php?is_deleted=0&as_map=0&criteria[0][field]=14&criteria[0][searchtype]=equals&criteria[0][value]=1&search=Rechercher&itemtype=Ticket&start=0",
+          "raw": {
+            "queryString": "",
+            "uri": ""
+          },
+          "refId": "A",
+          "sensor": {
+            "name": ""
+          },
+          "table": false
+        },
+        {
+          "alias": "Requisição",
+          "col_0": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_1": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_10": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_11": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_2": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_3": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_4": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_5": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_6": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_7": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_8": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "col_9": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "console": false,
+          "counter": true,
+          "datefield": {
+            "group": "Special / be careful",
+            "label": "Do not use date search (get all data)",
+            "number": "-1"
+          },
+          "dayhours": false,
+          "dynamicsplit": {
+            "group": "Default",
+            "label": "------",
+            "number": "0"
+          },
+          "histogram": false,
+          "query": "http://localhost/glpi/apirest.phpfront/ticket.php?is_deleted=0&as_map=0&criteria[0][field]=14&criteria[0][searchtype]=equals&criteria[0][value]=2&search=Rechercher&itemtype=Ticket&start=0",
+          "refId": "B",
+          "table": false
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Total -  Incidentes / Requisições ",
+      "tooltip": {
+        "shared": false,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "transparent": true,
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "series",
+        "name": null,
+        "show": true,
+        "values": [
+          "total"
+        ]
+      },
+      "yaxes": [
+        {
+          "format": "none",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": false
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 18,
+  "style": "dark",
+  "tags": [
+    "glpi",
+    "isweluiz",
+    "blog.isweluiz.com.br",
+    "dashboard glpi"
+  ],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "text": "GLPI API",
+          "value": "GLPI API"
+        },
+        "hide": 2,
+        "includeAll": false,
+        "label": "GLPI Datasource",
+        "multi": false,
+        "name": "DS_GLPI",
+        "options": [],
+        "query": "ddurieux-glpi-datasource",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
+      },
+      {
+        "current": {
+          "text": "$URL_GLPI",
+          "value": "$URL_GLPI"
+        },
+        "hide": 2,
+        "label": null,
+        "name": "URL_GLPI",
+        "options": [
+          {
+            "selected": true,
+            "text": "$URL_GLPI",
+            "value": "$URL_GLPI"
+          }
+        ],
+        "query": "$URL_GLPI",
+        "skipUrlSync": false,
+        "type": "constant"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-2d",
+    "to": "now"
+  },
+  "timepicker": {
+    "nowDelay": "",
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ],
+    "time_options": [
+      "5m",
+      "15m",
+      "1h",
+      "6h",
+      "12h",
+      "24h",
+      "2d",
+      "7d",
+      "30d"
+    ]
+  },
+  "timezone": "browser",
+  "title": "Dashboard  GLPI",
+  "uid": "0_kypz7Zk",
+  "version": 55
+}
