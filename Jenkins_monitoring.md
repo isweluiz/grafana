@@ -4,7 +4,7 @@
 
 ### LAB on GCP 
 
-| Host | Ferramentas| Tipo | 
+| Host | Tools| Plataform | 
 | -------- | -------- | -------- |
 | 34.67.153.94    | Jenkins   | Docker     |
 | 34.67.153.94    | Prometheus   | Docker     |
@@ -208,5 +208,3 @@ Add a new Data Source for prometheus
 Save and then, create your own dashboards or download one ready in https://grafana.com/grafana/dashboards 
 
 ![](https://i.imgur.com/KSzHQXp.png)
-
-https://www.youtube.com/watch?v=N8P9ZLMA2xY&ab_channel=Thetips4you
